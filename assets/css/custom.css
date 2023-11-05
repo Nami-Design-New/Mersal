@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
 :root {
-  --mainColor: #24286A;
+  --mainColor: #24286a;
   --whiteColor: #ffffff;
   --darkColor: #2c2c2c;
   --lightGrayColor: #d6d6d6;
@@ -498,7 +498,7 @@ content {
 
 .fun-facts-1 {
   padding: 100px 0;
-  background-image: linear-gradient(-45deg, #5467ff, #24286A);
+  background-image: linear-gradient(-45deg, #5467ff, #24286a);
 }
 
 .fun-facts-card:hover i path {
@@ -620,4 +620,101 @@ content {
 .product-card {
   height: 100%;
   margin-top: 0 !important;
+}
+
+.branch_info {
+  padding: 24px 12px;
+  background: #fff;
+  box-shadow: rgba(114, 114, 114, 0.1) 0px 0px 8px;
+  border-radius: 12px;
+}
+.branch_info iframe {
+  width: 100%;
+}
+.branch_info .inffo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 24px;
+}
+.branch_info .inffo h1 {
+  font-size: 48px;
+  margin-bottom: 8px;
+  color: var(--darkColor);
+}
+.branch_info .inffo ul {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+}
+.branch_info .inffo ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  transition: var(--transition);
+}
+.branch_info .inffo ul li .icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--mainColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.branch_info .inffo ul li .icon i {
+  color: var(--mainColor);
+  transition: var(--transition);
+}
+.branch_info .inffo ul li p,
+.branch_info .inffo ul li a {
+  font-weight: 600;
+  color: var(--darkColor);
+  font-size: 18px;
+}
+.branch_info .inffo ul li:hover .icon {
+  background: var(--mainColor);
+}
+.branch_info .inffo ul li:hover .icon i {
+  color: var(--whiteColor);
+}
+.branch_info .inffo .social {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.branch_info .inffo .social h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.branch_info .inffo .social ul {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+}
+.branch_info .inffo .social ul li {
+  margin: 0;
+}
+.branch_info .inffo .social ul li a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+.branch_info .inffo .social ul li a i {
+  transition: var(--transition);
+  color: var(--mainColor);
+}
+.branch_info .inffo .social ul li a:hover {
+  background: var(--mainColor);
+}
+.branch_info .inffo .social ul li a:hover i {
+  color: var(--whiteColor);
+  transform: scale(0.8);
 }/*# sourceMappingURL=custom.css.map */

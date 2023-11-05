@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #24286A;
+  --mainColor: #24286a;
   --whiteColor: #ffffff;
   --darkColor: #2c2c2c;
   --lightGrayColor: #d6d6d6;
@@ -103,7 +103,7 @@ input {
 }
 ::placeholder {
   font-size: 12px;
-  color: #bababa !important ;
+  color: #bababa !important;
   font-weight: normal !important;
 }
 ::selection {
@@ -451,7 +451,7 @@ content {
 }
 .fun-facts-1 {
   padding: 100px 0;
-  background-image: linear-gradient(-45deg, #5467ff, #24286A);
+  background-image: linear-gradient(-45deg, #5467ff, #24286a);
 }
 .fun-facts-card:hover i {
   path {
@@ -553,21 +553,118 @@ content {
   left: 0;
   top: 80px;
   a {
-    padding: 8px ;
+    padding: 8px;
     color: var(--darkColor);
     border-radius: 4px;
     &.active,
-    &:hover{
+    &:hover {
       background-color: var(--mainColor);
       color: var(--whiteColor);
     }
   }
-
 }
-
 
 .product-card {
   height: 100%;
   margin-top: 0 !important;
+}
 
+//***********//
+.branch_info {
+  padding: 24px 12px;
+  background: #fff;
+  box-shadow: rgba(114, 114, 114, 0.1) 0px 0px 8px;
+  border-radius: 12px;
+  iframe {
+    width: 100%;
+  }
+  .inffo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0 24px;
+    h1 {
+      font-size: 48px;
+      margin-bottom: 8px;
+      color: var(--darkColor);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 32px 0;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 16px;
+        transition: var(--transition);
+        .icon {
+          width: 45px;
+          height: 45px;
+          border: 1px solid var(--mainColor);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: var(--transition);
+          i {
+            color: var(--mainColor);
+            transition: var(--transition);
+          }
+        }
+        p,
+        a {
+          font-weight: 600;
+          color: var(--darkColor);
+          font-size: 18px;
+        }
+        &:hover {
+          .icon {
+            background: var(--mainColor);
+            i {
+              color: var(--whiteColor);
+            }
+          }
+        }
+      }
+    }
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      ul {
+        display: flex;
+        gap: 16px;
+        margin: 0;
+        li {
+          margin: 0;
+          a {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: var(--transition);
+            i {
+              transition: var(--transition);
+              color: var(--mainColor);
+            }
+            &:hover {
+              background: var(--mainColor);
+              i {
+                color: var(--whiteColor);
+                transform: scale(.8);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
